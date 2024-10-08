@@ -6,12 +6,12 @@ const FormComponent = () =>{
 
 
     return(
-        <form className="bg-slate-500 w-1/3 h-2/5 flex flex-col gap-3 ">
+        <form className="bg-slate-500 w-1/3 h-2/5 flex flex-col gap-3 sm: justify-start">
             <div>
                 <h1 className="text-center text-2xl font-bold">Login</h1>
                 <div className="w-full h-px bg-black"></div>
             </div>
-            <div className="flex flex-col gap-7">
+            <div className="flex flex-col gap-7 sm: p-2">
             <input 
                 className="rounded-xl p-2 "
                 type="email"
@@ -27,11 +27,11 @@ const FormComponent = () =>{
                 onChange={key => setPasswordState(key.target.value)}
             />
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end sm:text-sm">
                 <a href="" className="mr-3 text-fuchsia-50 ">
                     Esqueceu a Senha ?</a>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center sm:mt-2 text-sm">
             <button className="bg-amber-400 rounded-lg w-24 p-1">Entrar</button>
             </div>
         </form>

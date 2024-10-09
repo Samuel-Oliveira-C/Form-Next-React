@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        'repsonsiveTablet': {'min': '500px',"max" : "976px"},
+        'responsividadeCel': {"max": "500px"},
+      },
     },
   },
   plugins: [],
